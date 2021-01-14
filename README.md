@@ -31,7 +31,7 @@ jobs:
           source_branch: ${{ env.GITHUB_REF_NAME }}
           commit_message: "[Automated] Merge branch '${{env.GITHUB_REF_NAME}}' into dev"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
 ```
 
 ## Parameters
