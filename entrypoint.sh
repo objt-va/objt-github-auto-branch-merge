@@ -23,6 +23,7 @@ fi
 
 git config --global user.name "$INPUT_USER_NAME"
 git config --global user.email "$INPUT_USER_EMAIL"
+git config --global --add safe.directory /github/workspace
 
 set -o xtrace
 
