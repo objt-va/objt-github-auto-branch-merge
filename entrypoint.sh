@@ -21,8 +21,8 @@ if [[ "$INPUT_ALLOW_FF" == "true" ]]; then
   fi
 fi
 
-git config user.name "$INPUT_USER_NAME"
-git config user.email "$INPUT_USER_EMAIL"
+git config --global user.name "$INPUT_USER_NAME"
+git config --global user.email "$INPUT_USER_EMAIL"
 
 set -o xtrace
 
